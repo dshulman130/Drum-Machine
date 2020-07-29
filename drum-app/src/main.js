@@ -1,13 +1,22 @@
-import Vue from 'vue';
-import App from './App.vue';
-import { Inkline } from '@inkline/inkline/src';
-import * as components from '@inkline/inkline/src/components';
-import '@inkline/inkline/src/inkline.scss';
+import Vue from 'vue'
+import PortalVue from 'portal-vue'
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+import App from './App.vue'
 
-Vue.use(Inkline, { components });
+Vue.config.productionTip = false
+Vue.use(PortalVue)
+Vue.use(BootstrapVue)
+Vue.use(IconsPlugin)
 
-Vue.config.productionTip = false;
-
-new Vue({
+var view = new Vue({
   render: h => h(App),
+
+  data: {
+    checked: false
+  },
+  template: '<div>{{ checked }}</div'
 }).$mount('#app');
+
+view.checked = false
