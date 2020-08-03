@@ -2,7 +2,7 @@
 A simple drum machine created with Vue.js. This was my first time using Vue, I love it so far!
 
 ## Welcome to the Vue Drum Machine!
-- To get started, click the *Code* button in the top right and click *Download ZIP*
+- To get started, click the **Code** button in the top right and click **Download ZIP**
 - Extract these files anywhere you like and let's begin!
 
 ### Installation and Setup
